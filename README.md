@@ -45,7 +45,7 @@ This should work as follows:
 
 ### Warning
 
-Although I'd be happy if a lot of smart people contributed to this project and made it fast, bulletproof, better written, etc., this is up here to provide myself with a solid starting point for starting new projects. It works for me, but I can't guarantee it will work for you.
+Although I'd be happy if a lot of smart people contributed to this project and made it fast, bulletproof, better written, etc., this is up here to provide myself with a solid starting point for new projects. It works for me, but I can't guarantee it will work for you.
 
 ### Credits
 
