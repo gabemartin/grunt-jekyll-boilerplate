@@ -40,7 +40,7 @@ This should work as follows:
 5. global.scss gets compiled with SASS, then any necessary browser prefixes are added via Autoprefixer
 6. CSS, JS, and Images then get compressed and are moved to their appropriate folders within the Jekyll system
 7. Jekyll publishes your static site to the _site folder
-8. LiveReload monitors the _site/CSS/ folder along with any HTML file changes
+8. LiveReload monitors the _site/CSS/ folder, along with any HTML changes, then reloads your browser automatically
 9. Grunt watches for changes to your resource files and repeats the process
 
 ### Warning
