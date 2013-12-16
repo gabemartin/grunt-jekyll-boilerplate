@@ -29,18 +29,19 @@ From there, you should be able to view the default index page by going to **http
 ### What it should do
 
 This should work as follows:
-# Launch Terminal and run Jekyll and Grunt (instructions above).
-# Go to http://localhost:4000
-# Enable LiveReload via the browser extension
-# Edit the following resource files within the _grunt folder:
+
+1. Launch Terminal and run Jekyll and Grunt (instructions above).
+2. Go to http://localhost:4000
+3. Enable LiveReload via the browser extension
+4. Edit the following resource files within the _grunt folder:
 ** CSS: _grunt/css/global.scss
 ** JavaScript: _grunt/js/global.js
 ** Images: _grunt/images/
-# global.scss gets compiled with SASS, then any necessary browser prefixes are added via Autoprefixer
-# CSS, JS, and Images then get compressed and are moved to their appropriate folders within the Jekyll system
-# Jekyll publishes your static site to the _site folder
-# LiveReload monitors the _site/CSS/ folder along with any HTML file changes
-# Grunt watches for changes to your resource files and repeats the process
+5. global.scss gets compiled with SASS, then any necessary browser prefixes are added via Autoprefixer
+6. CSS, JS, and Images then get compressed and are moved to their appropriate folders within the Jekyll system
+7. Jekyll publishes your static site to the _site folder
+8. LiveReload monitors the _site/CSS/ folder along with any HTML file changes
+9. Grunt watches for changes to your resource files and repeats the process
 
 ### Warning
 
