@@ -1,0 +1,40 @@
+@import "libs/normalize";
+
+$backgroundColor: orange;
+$spacing: 5rem;
+$links: #35a8ff;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background: $backgroundColor;
+  padding: $spacing;
+}
+body {
+  padding: $spacing;
+  background: white;
+  border: 30px solid purple;
+}
+
+a {
+  color: $links;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: darken($links, 25%);
+  }
+}
+
+.moving-box {
+  background: #f06d06;
+  width: 100px;
+  height: 100px;
+  animation: swing 3s ease alternate infinite;
+}
+
+// Example of ignoring prefixes
+@keyframes swingger {
+  100% {
+    transform: translateX(100px);
+  }
+}
