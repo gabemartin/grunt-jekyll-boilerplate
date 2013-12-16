@@ -34,9 +34,9 @@ This should work as follows:
 2. Go to http://localhost:4000
 3. Enable LiveReload via the browser extension
 4. Edit the following resource files within the _grunt folder:
-** CSS: _grunt/css/global.scss
-** JavaScript: _grunt/js/global.js
-** Images: _grunt/images/
+  * CSS: _grunt/css/global.scss
+  * JavaScript: _grunt/js/global.js
+  * Images: _grunt/images/
 5. global.scss gets compiled with SASS, then any necessary browser prefixes are added via Autoprefixer
 6. CSS, JS, and Images then get compressed and are moved to their appropriate folders within the Jekyll system
 7. Jekyll publishes your static site to the _site folder
