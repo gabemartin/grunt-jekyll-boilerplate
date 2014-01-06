@@ -141,11 +141,18 @@ module.exports = function(grunt) {
       },
         files: ['public/_site/css/global.css', 'public/_site/*.html']
     },
-
-
-
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          base: 'public/_site',
+          keepalive: true,
+        }
+      }
+    },
 
     watch: {
+
       css: {
         files: ['assets/sass/*.sass', 'assets/sass/parts/*.sass', 'assets/sass/*.scss', 'assets/sass/parts/*.scss'],
         tasks: ['sass', 'autoprefixer', 'cssmin'],
@@ -170,11 +177,10 @@ module.exports = function(grunt) {
         },
       },
     },
-
   });
 
   require('load-grunt-tasks')(grunt);
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'imagemin', 'jekyll']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify', 'imagemin', 'jekyll', 'connect']);
   grunt.registerTask('setup', ['bowercopy', 'rename', 'string-replace']);
   grunt.registerTask('dev', ['watch']);
 
