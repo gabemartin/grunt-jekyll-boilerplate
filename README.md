@@ -1,6 +1,10 @@
-npm install
+# In terminal run the following:
 
-grunt watch
+To install grunt modules:
+```npm install```
 
-run server in seperate Terminal window with:
-**grunt connect**
+Tell grunt to watch for changes:
+```grunt watch```
+
+Open another Terminal window and run a server:
+```grunt connect```
