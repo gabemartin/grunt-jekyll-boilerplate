@@ -1,4 +1,4 @@
-# In terminal run the following:
+### In terminal run the following:
 
 To install grunt modules:
 ```npm install```
