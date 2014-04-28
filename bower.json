@@ -2,6 +2,6 @@
     "name": "sample",
     "version": "0.0.0",
     "devDependencies": {
-        "html5-boilerplate": "latest"
+        "sass-structure": "master"
     }
 }

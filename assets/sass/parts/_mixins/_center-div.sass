@@ -1,0 +1,6 @@
+=center-div($width: 600px, $padding: 20px)
+  padding-left: calc(50% - #{$width}/2)
+  padding-right: calc(50% - #{$width}/2)
+  @media screen and (max-width: $width)
+    padding-left: $padding
+    padding-right: $padding

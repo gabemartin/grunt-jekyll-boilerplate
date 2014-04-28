@@ -1,0 +1,18 @@
+// Apply to UL tag. Will create a grid of equally spaced items.
+// All items should be the same height. Best for image thumbnails.
+=justifygrid($cols: 2, $li_width_auto: 98.9%, $li_width_force: 49%)
+  text-align: justify
+  list-style: none
+  padding: 0
+  > *
+    display: inline-block
+    margin: 0
+    @if $li_width_force != 49%
+      width: $li_width_force
+    @else
+      width: floor($li_width_auto / $cols)
+    text-align: left
+  &:after
+    content: ""
+    display: inline-block
+    width: 100%
